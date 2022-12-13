@@ -16,7 +16,7 @@ int main(void)
 	{
 		putchar(num);
 
-		if (num != '9') /*Making sure that ", " does not appear at the end after 9, as that is the last number*/
+		if (num != '9') /*So that ", " doesn't print at end*/
 		{
 			putchar (',');
 			putchar(' ');
