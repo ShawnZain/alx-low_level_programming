@@ -37,7 +37,7 @@ int main(void)
 			}
 		}
 	}
-	
+	 /*removed trailing whitespace*/
 	putchar('\n');
 
 	return (0);
