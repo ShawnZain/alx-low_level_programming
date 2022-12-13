@@ -4,8 +4,9 @@
 
 /**
  * main - Determins if random num is +//-
- *
+ * 
  * Return: Always 0 (successful)
+ * 
  */
 
 int main(void)
