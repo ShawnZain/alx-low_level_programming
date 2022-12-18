@@ -2,8 +2,7 @@
 
 /**
  * print_line - prints _
- * @n: number of times to print _,
- * if n is 0, print only newline
+ * @n: number of times to prnt _
  */
 
 void print_line(int n);
