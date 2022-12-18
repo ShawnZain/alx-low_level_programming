@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints \
- * @n: number of times to print \
+ * print_diagonal - prints slash
+ * @n: number of times to print slash
  */
+
 void print_diagonal(int n)
 {
 	int i = 0;
