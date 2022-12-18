@@ -2,7 +2,6 @@
 
 /**
 * print_numbers - prints 1 to 9
-* REturn: void
 */
 
 void print_numbers(void)
@@ -14,3 +13,4 @@ void print_numbers(void)
 		_putchar(i);
 	}
 	_putchar('/n');
+}
