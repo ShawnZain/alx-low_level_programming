@@ -5,7 +5,7 @@
  * Return: 0
  */
 
-in main(void)
+int main(void)
 {
 	unsigned long int i = 3, n = 612852475143;
 
