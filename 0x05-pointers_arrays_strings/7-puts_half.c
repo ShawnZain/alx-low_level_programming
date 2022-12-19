@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
-/**puts_half - prints later half of a string
+/**
+ * puts_half - prints later half of a string
  * @str: proided string
  */
 
