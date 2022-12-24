@@ -11,7 +11,7 @@ char *leet(char *s)
 	int count = 0, i;
 	int lower_case[] = {97, 101, 111, 116, 108};
 	int upper_case[] = {65, 69, 79, 84, 76};
-	int number[] = {52, 51, 48, 55, 49};
+	int numbers[] = {52, 51, 48, 55, 49};
 
 	while (*(s + count) != '\0')
 	{
