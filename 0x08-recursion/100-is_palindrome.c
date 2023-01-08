@@ -20,6 +20,19 @@ int comparator(char *str, int len, int i)
 }
 
 /**
+ * _strlen_recursion - finds length of a string
+ * @s: string
+ * Return: length of the string
+ */
+int _strlen_recursion(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	else
+		return (1 + _strleng_recursion(s + 1));
+}
+
+/**
  * is_palindrome - checks if a string is a palindrome
  * an empty string is considered a palindrome
  *
