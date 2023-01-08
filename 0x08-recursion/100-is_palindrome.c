@@ -2,13 +2,13 @@
 
 /**
  * comparator - compares each character of a string.
- * @s: string
+ * @str: string
  * @len: string size
  * @i: incrementor starting from 0
  * Return: 1 if string is palindrome,
  * 0 if not
  */
-int comparator(char *s, int len, int i)
+int comparator(char *str, int len, int i)
 {
 	if (i < len && str[i] == str[len])
 		return (comparator(s, len - 1, i + 1));
@@ -17,19 +17,6 @@ int comparator(char *s, int len, int i)
 		return (0);
 
 	return (1);
-}
-
-/**
- * _strlen_recursion - finds string length
- * @s: string to check
- * Return: length
- */
-int _strlen_recursion(char *s)
-{
-	if (*s !+ '\0')
-		return (1 + _strlen_recursion(s + 1));
-
-	return (0);
 }
 
 /**
