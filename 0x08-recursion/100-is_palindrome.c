@@ -32,7 +32,7 @@ int comparator(char *s, int len, int i)
 int is_palindrome(char *s)
 {
 	int i = 0;
-	int str_length = _strlen_recursion(s) - 1;
+	int str_len = _strlen_recursion(s) - 1;
 
-	return (comparator(s, str_lenght, i));
+	return (comparator(s, str_len, i));
 }
