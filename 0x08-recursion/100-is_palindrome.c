@@ -13,7 +13,7 @@ int comparator(char *str, int len, int i)
 	if (i < len && str[i] == str[len])
 		return (comparator(s, len - 1, i + 1));
 
-	if (s[i] != s[len])
+	if (str[i] != str[len])
 		return (0);
 
 	return (1);
