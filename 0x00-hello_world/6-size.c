@@ -2,9 +2,9 @@
 
 /**
  * main - entry point
- * 	prints the size of types
+ * prints the size of types
  *
- * return: Always 0 (success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
