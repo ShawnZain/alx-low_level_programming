@@ -2,12 +2,13 @@
 
 /**
  * main - Entry point
- * Return: Always 0 (Success)
+ *
+ * Return: ALways 0 (success)
  */
 
 int main(void)
 {
-	puts("\"Programming in c is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle");
 
 	return (0);
 }
