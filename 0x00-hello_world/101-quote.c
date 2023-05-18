@@ -16,10 +16,10 @@ int main(void)
 
 	sizeofquote = strlen(quote) - 1;
 
-	while i <= sizeofquote
+	while (i <= sizeofquote)
 	{
 		putchar(quote[i]);
-		i++
+		i++;
 	}
 
 	putchar('\n');
