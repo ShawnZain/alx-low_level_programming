@@ -3,34 +3,31 @@
 /**
  * main - entry point
  *
- * Description: print all possible combos of single digis
- * each combo to be followed by a ',' then space
+ * Description: print 0 to 9 followed by ',' and space. Apart from after 9
  *
- * Return: success (0)
+ * Return: Success (0)
  */
 
 int main(void)
 {
-	int num1; /* first digit of combination */
-	int num2; /* second digit of combination */
+	int num;
 
-	for (num1 = 0; num1 <= 9; num1++) /* increment first digit */
+	for (num = 0; num <= 9; num++)
 	{
-		for (num2 = 0; num2 <= 9; num2++) /* increment second digit */
-		{
-			putchar(num1 + '0'); /*num1 stays the same until num2
-					       is 9, before increment by 1 */
-			putchar(num2 + '0'); /* num2 runs throught the loop */
+		putchar(num + '0');
 
-			if (num1 == 9 && num2 == 9)
-				break; /* at combo 99 no comma or space after */
-			else 
-			{
-				putchar(',');
-				putchar(' ');
-			}
+		if (num != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		else if (num == 9)
+		{
+			break;
 		}
 	}
+
+	putchar('\n');
 
 	return (0);
 }
