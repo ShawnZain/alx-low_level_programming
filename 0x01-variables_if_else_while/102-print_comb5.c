@@ -21,7 +21,7 @@ int main(void)
 		for ((num2 = num1 + 1); num2 <= 99; num2++)
 		{
 			/**
-			 * num2 runs from 01 to 99 
+			 * num2 runs from 01 to 99
 			 * num1 will never be equal to num2
 			 */
 
