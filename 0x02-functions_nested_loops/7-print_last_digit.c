@@ -23,7 +23,7 @@ int print_last_digit(int n)
 
 	/**
 	 * If n is INT_MIN, then abs(INT_MIN) will be beyond INT_MAX
-	 * to prevent errors, just equate i to 8 which is the 
+	 * to prevent errors, just equate i to 8 which is the
 	 * last digit of INT_MIN
 	 */
 
