@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char str[] = "_putchar";
+	char str[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n'};
 	int str_length;
 	int i;
 
