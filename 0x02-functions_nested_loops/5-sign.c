@@ -8,32 +8,27 @@
  *
  * @n: input argument to check for
  *
- * Return: 1 if n is greater than zero 
- * 	0 if n is zero
- * 	-1 if n is less than zero
+ * Return: 1 if n is greater than zero
+ * 0 if n is zero
+ * -1 if n is less than zero
  */
 
 int print_sign(int n)
 {
-	int i;
-
 	if (n > 0)
 	{
-		i = 1;
 		_putchar(43);
-		return (i);
+		return (1);
 	}
 	else if (n == 0)
 	{
-		i = 0;
 		_putchar(48);
-		return (i);
+		return (0);
 	}
 	else if (n < 0)
 	{
-		i = -1;
 		_putchar(45);
-		return (i);
+		return (-1);
 	}
 	return (0);
 }
