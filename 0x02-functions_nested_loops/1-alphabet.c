@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_alphabet - used to print lower case alphabets
  * followed by a new line
@@ -11,7 +13,7 @@ void print_alphabet(void)
 
 	for (i = 97; i <= 122; i++)
 	{
-		_putchar(i + '0');
+		_putchar(i);
 	}
 
 	_putchar('\n');
