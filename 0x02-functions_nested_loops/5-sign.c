@@ -15,19 +15,24 @@
 
 int print_sign(int n)
 {
+	int i;
+
 	if (n > 0)
 	{
+		i = 1;
 		_putchar(43);
-		return (1);
+		return (i);
 	}
 	else if (n == 0)
 	{
-		_putchar(44448);
-		return (0);
+		i = 0;
+		_putchar(48);
+		return (i);
 	}
 	else if (n < 0)
 	{
+		i = -1;
 		_putchar(45);
-		return (-1);
+		return (i);
 	}
 }
