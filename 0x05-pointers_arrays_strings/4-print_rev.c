@@ -22,7 +22,7 @@ void print_rev(char *s)
 	}
 
 	/* then print starting from strlength backwards*/
-	while (j < str)
+	while (j <= str)
 	{
 		_putchar(*(s + (i - 1)));
 		/* since str goes until the buffer, print before it*/
