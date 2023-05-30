@@ -8,27 +8,25 @@
 
 void rev_string(char *s)
 {
-	int i, j, k;
+	int i, k;
 	int str;
-	char temp[(_strlen(s))];
+	char temp;
 
-	i = _strlen(s);
-	j = 0;
-
-	/* save the string length */
-	str = i;
-
-	/* temporary string to have the same values as s*/
-	for (k = 0; k < str; k++)
+	i = 0;
+	/* get the string length */
+	while (s[i] != '\0')
 	{
-		temp[k] = s[k];
+		i++;
 	}
-	
-	/* reverse the order of the string */
-	while (j < str)
+
+	/* Total element indexes: */
+	str = i - 1;
+
+	for (k = 0; k < str / 2; k++)
 	{
-		*(s + j) = *(temp + (i - 1));
-		i--;
-		j++;
+		temp = s[k];
+		s[k] = s[str];
+		s[str] = temp;
+		str--;
 	}
 }
