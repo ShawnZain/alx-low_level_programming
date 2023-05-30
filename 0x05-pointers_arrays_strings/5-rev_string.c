@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * rev_string - reverses a string
  * @s: string to reverse
@@ -6,9 +8,9 @@
 
 void rev_string(char *s)
 {
-	int i, j;
+	int i, j, k;
 	int str;
-	char l[] = s; /* save the string in another array */
+	char temp_string(_strlen(*s));
 
 	i = 0;
 	j = 0;
@@ -20,17 +22,17 @@ void rev_string(char *s)
 
 	/* save the string length */
 	str = i;
+
+	/* temporary string to have the same values as s*/
+	for (k = 0; k < str; k++)
+	{
+		temp_string[k] = s[k];
+	}
 	
 	/* reverse the order of the string */
 	while (j < str)
 	{
-		/**
-		 * if l[str -1] = "F"
-		 * then s[j] to be F
-		 *
-		 * we say l[str - 1] becase l counts until '\0'
-		 */
-		*(s + j) = *(l + (i - 1));
+		*(s + j) = *(temp_string + (i - 1));
 		i--;
 		j++;
 	}
