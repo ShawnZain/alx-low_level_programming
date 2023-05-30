@@ -22,9 +22,9 @@ void print_array(int *a, int n)
 	{
 		for (j = 0; j < (n - 2); j++) /* Not print last value & '\0' */
 		{
-			printf("%s, ", *(a + j));
+			printf("%d, ", *(a + j));
 		}
-		printf("%s\n", *(a + (n - 1))); /* print last value */
+		printf("%d\n", *(a + (n - 1))); /* print last value */
 	}
 	else if (n < 0 && n > i) /* if not valid print newline */
 	{
