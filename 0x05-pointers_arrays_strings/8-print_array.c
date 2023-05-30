@@ -20,7 +20,7 @@ void print_array(int *a, int n)
 
 	if (n < i && n > 0) /* confirm that n is valid */
 	{
-		for (j = 0; j < (n - 2); j++) /* Not print last value & '\0' */
+		for (j = 0; j <= (n - 2); j++) /* Not print last value & '\0' */
 		{
 			printf("%d, ", *(a + j));
 		}
