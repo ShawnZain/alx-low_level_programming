@@ -17,22 +17,19 @@ void print_rev(char *s)
 	/* find the length of the string first */
 	while (*(s + i) != '\0')
 	{
-		str = i;
 		i++;
 	}
 
+	/* save the strlength */
+	str = i;
+
 	/* then print starting from strlength backwards*/
-	while (j <= str)
+	while (j < str)
 	{
-		if (str != 0)
-		{
-			_putchar(*(s + (i - 1)));
-			/* since str goes until the buffer, print before it*/
-			i--;
-			j++;
-		}
-		else if (str == 0)
-			break;
+		_putchar(*(s + (i - 1)));
+		/* since str goes until the buffer, print before it*/
+		i--;
+		j++;
 	}
 
 	_putchar('\n');
