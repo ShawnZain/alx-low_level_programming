@@ -11,7 +11,7 @@ char *_strcpy(char *dest, char *src)
 
 	i = 0;
 	/* find the length of the string we will copy */
-	while (*(src + i) =! '\0')
+	while (src[i] =! '\0')
 	{
 		i++;
 	}
