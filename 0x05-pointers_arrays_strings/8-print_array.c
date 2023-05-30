@@ -26,7 +26,7 @@ void print_array(int *a, int n)
 		}
 		printf("%d\n", *(a + (n - 1))); /* print last value */
 	}
-	else if (n < 0 && n > i) /* if not valid print newline */
+	else if (n < 0 || n > i) /* if not valid print newline */
 	{
 		printf("\n");
 	}
