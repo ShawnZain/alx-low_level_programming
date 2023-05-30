@@ -24,10 +24,13 @@ void print_rev(char *s)
 	/* then print starting from strlength backwards*/
 	while (j <= str)
 	{
-		_putchar(*(s + (i - 1)));
-		/* since str goes until the buffer, print before it*/
-		i--;
-		j++;
+		if (str != 0)
+		{
+			_putchar(*(s + (i - 1)));
+			/* since str goes until the buffer, print before it*/
+			i--;
+			j++;
+		}
 	}
 
 	_putchar('\n');
