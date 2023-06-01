@@ -32,8 +32,13 @@ char *_strcat(char *dest, char *src)
 
 	/* from null byte of dest, replace the value of dest with src */
 	len = 0;
-	while (len < j) /* src[len] will go until just before '\0' of src */
+	while (len < j && src[len] != '\0') 
 	{
+		/**
+		 * src[len] will go until just before '\0' of src
+		 * so if src[0] == '\0' do not concatenate :)
+		 */
+
 		dest[i] = src[len];
 		len++;
 		i++; /* increment i so that the strings concatenate */
