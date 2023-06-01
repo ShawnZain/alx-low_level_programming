@@ -34,7 +34,7 @@ char *_strcat(char *dest, char *src)
 	len = 0;
 	while (len < j) /* src[len] will go until just before '\0' of src */
 	{
-		dest[i] = src[len]; 
+		dest[i] = src[len];
 		len++;
 		i++; /* increment i so that the strings concatenate */
 	}
