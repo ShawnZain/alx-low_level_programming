@@ -18,6 +18,7 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i, j;
+	int len;
 
 	/* STEP 1 */
 	i = 0;
@@ -26,11 +27,17 @@ char *_strncpy(char *dest, char *src, int n)
 		i++;
 	}
 
+	len = 0;
+	while (dest[len] != '\0')
+	{
+		len ++;
+	}
+
 
 	/* STEP 2 */
 	if (n <= i)
 	{
-		for (j = 0; j < n; j++)
+		for (j = 0; j < n && dest[j] != '\0'; j++)
 		{
 			dest[j] = src[j];
 		}
@@ -38,7 +45,7 @@ char *_strncpy(char *dest, char *src, int n)
 	else if (n > i)
 	{
 		j = 0;
-		while (j < n)
+		while (j < n && dest[j] != '\0')
 		{
 			dest[j] = src[j];
 			j++;
