@@ -16,7 +16,7 @@ int check_for_multiples(int n, int t)
 		return (1);
 	}
 
-	return(check_for_multiples(n, t +1));
+	return (check_for_multiples(n, t + 1));
 }
 
 /**
