@@ -15,30 +15,34 @@
 
 int main(int argc, char **argv)
 {
-	int i;
+	int i, j;
 	int result = 0;
 
 	if (argc < 2)
 	{
 		printf("0\n");
+
+		return (0);
 	}
 	else if (argc >= 2)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (*argv[i] < '0' || *argv[i] > '9')
+			for (j = 0; argv[i][j]; j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (argv[i][j] < '0' || argv[i][j] > '9')
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-			else
-			{
-				result += atoi(argv[i]);
-			}
+
+			result += atoi(argv[i]);
+
 		}
 
-		printf("%d\n", result);
 	}
+	printf("%d\n", result);
 
 	return (0);
 }
