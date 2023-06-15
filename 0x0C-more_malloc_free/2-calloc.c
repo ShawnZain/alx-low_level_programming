@@ -1,6 +1,27 @@
 #include <stdlib.h>
 
 /**
+* *_memset - fills memory with a constant byte
+* @s: memory area to be filled
+* @b: char to copy
+* @n: number of times to copy b
+*
+* Return: pointer to the memory area s
+*/
+
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+
+	return (s);
+}
+
+/**
  * _calloc - allocates memory and initialised it to 0
  * @nmemb: nnumber of elements in the array
  * @size: bytes of each element in the rray
@@ -12,8 +33,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *n;
-	unsigned int i;
+	char *n;
 
 	/* return NULL if... */
 	if (nmemb == 0 || size == 0)
@@ -27,10 +47,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	/* initialise all values of the array to 0 */
-	for (i = 0; i < nmemb * size; i++)
-	{
-		n[i] = 0;
-	}
+	_memset(n, 0, nmemb * size);
 
 	return (n);
 }
