@@ -12,7 +12,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *n;
+	int *n;
 	int len, i;
 
 	/* return NULL if... */
@@ -26,13 +26,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (n == NULL)
 		return (NULL);
 
-	/* find the length of the array */
-	len = 0;
-	while (n && n[len])
-		len++;
-
 	/* initialise all values of the array to 0 */
-	for (i = 0; i < len; len++)
+	for (i = 0; i <= nmemb; i++)
 	{
 		n[i] = 0;
 	}
