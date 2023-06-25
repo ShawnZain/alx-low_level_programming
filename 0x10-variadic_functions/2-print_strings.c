@@ -21,6 +21,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		str = va_arg(args, char *);
 
+		/* check if string is NULL */
+		if (str == NULL)
+		{
+			str = "(nil)";
+		}
+
 		/* check if there is no separator */
 		if (separator == NULL)
 		{
@@ -28,17 +34,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			/* check if argument passed is not a string */
-			if (str == NULL)
-			{
-				str = "(nil)";
-			/**
-			 * if there is a separator & str != (nil)
-			 * print the strings with the separator
-			 * at the end print only the string followed by \n
-			 */
-			}
-			else if (i < n - 1)
+			if (i < n - 1)
 			{
 				printf("%s%s", str, separator);
 			}
