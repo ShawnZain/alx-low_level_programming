@@ -14,5 +14,6 @@ typedef struct node
 } listint_t;
 
 size_t print_listint(const listint_t *h);
+size_t linstint_len(const listint_t *h);
 
 #endif
