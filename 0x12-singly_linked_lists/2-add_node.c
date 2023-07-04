@@ -24,6 +24,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	temp->str = strdup(str);
+	temp->len = len;
 	temp->next = *head; /**
 			      * head is still pointing to the old node
 			      * so the new node will point to the older one
