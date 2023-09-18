@@ -6,7 +6,6 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-#define BUFF 10000
 
 ssize_t read_textfile(const char *filename, size_t letters);
 
