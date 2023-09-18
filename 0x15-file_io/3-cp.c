@@ -74,6 +74,7 @@ int main(int argc, char *argv[])
 		}
 
 		rFrom = read(oFrom, buff, 1024);
+		oTo = open(argv[2], O_APPEND | O_WRONLY);
 
 	} while (rFrom > 0);
 
