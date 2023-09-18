@@ -54,9 +54,9 @@ int main(int argc, char *argv[])
 	}
 
 	oFrom = open(argv[1], O_RDONLY);
-	rFrom = read(oFrom, buff, 1024);
-
 	oTo = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+
+	rFrom = read(oFrom, buff, 1024);
 
 	do
 	{
@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
 		}
 
 		rFrom = read(oFrom, buff, 1024);
-		oTo = open(argv[2], O_WRONLY | O_APPEND);
+
 	} while (rFrom > 0);
 
 	free(buff);
